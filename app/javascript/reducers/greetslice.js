@@ -19,4 +19,6 @@ export const greetapi = createAsyncThunk('Greetings/greetapi', async()=>{
        })
      }
  })
+
+ export default greet.reducer
  

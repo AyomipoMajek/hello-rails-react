@@ -12,7 +12,7 @@ const Greeting = () => {
   return (
     <div>
       <h1>Random Greeting</h1>
-      <p>{greeting.message}</p>
+      <p>{greet.title}</p>
     </div>
   );
 };
