@@ -3,11 +3,12 @@ import { greetapi } from "../reducers/greetslice";
 import { useDispatch, useSelector } from "react-redux";
 
 const Greeting = () => {
-  const greet = useSelector((state) => state.Greet.greetings)
-  const dispatch = useDispatch()
+  const greet = useSelector((state) => state.Greet.greetings);
+  const dispatch = useDispatch();
+
   useEffect(() => {
-    dispatch(greetapi())
-  }, [dispatch])
+    dispatch(greetapi());
+  }, [dispatch]);
 
   return (
     <div>
