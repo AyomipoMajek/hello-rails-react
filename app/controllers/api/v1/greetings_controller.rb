@@ -2,8 +2,8 @@ module Api
   module V1
     class GreetingsController < ApplicationController
       def index
-        @greeting = Message.order('RANDOM()').first
-        render json: { greeting: @greeting.message }
+        @greeting = Greeting.order('RANDOM()').limit(1)first
+        render json: { @greeting, status: :ok, message: 'greeting sucessfully generated' }
       end
     end
   end
